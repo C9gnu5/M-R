@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>M&R Catering Services</title>
+	<link rel="icon" href="images/logo.jpg" type="images/logo">
+	<link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+	<div class="wrapper">
+		<form>
+			<div class="form-container">
+				<div class="form-title">Delivery Form</div>
+				<div class="recipient">
+					<label for="recipient-name">Recipient's Name:*&nbsp;</label>
+					<input type="text" id="recipient-name" placeholder="Ex. John Cena" maxlength="20" required>
+				</div>
+				<div class="recipient-num">
+					<label for="recipient-number">Recipient's Number:*&nbsp;</label>
+					<input type="text" id="recipient-number" placeholder="09xxxxxxxxx" pattern="09+[0-9]{9}" maxlength="11" required
+					oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+				</div>
+				<div class="address">
+					<label for="recipient-address">Recipient's Address:*&nbsp;</label>
+					<input type="address" id="recipient-address" placeholder="Ex. Blk 1 Lot 11, Example St., Example Village" required>
+				</div>
+				<div class="email-opt">
+					<label for="email":>Email (Optional):&nbsp;</label>
+					<input type="email" id="recipient-email" placeholder="example@example.com">
+				</div>
+				<div class="res-date">
+					<label for="reserve-date">Date to Reserve:*&nbsp;</label>
+					<input type="date" id="reserve-date" required>
+				</div>
+				<div class="comments">
+					<label for="comment">Comment:</label>
+					<textarea rows="10" cols="30" id="comment" placeholder="Enter here anything we should know or what you want to tell us about the reservation."></textarea>
+				</div>
+				<div class="btn">
+					<input type="submit" value="Submit" class="sub">
+					<input type="reset" value="Clear" class="clear">
+				</div>
+			</div>
+		</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+body {
+	background-color: lightpink;
+	font-family: Nutmeg, sans-serif;
+	height: 1000px;
+}
+
+.form-container {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	border: 2px solid orange;
+	border-radius: 20px;
+	background-color: lightgrey;
+	padding: 3% 1%;
+	width: 500px;
+	height: 450px;
+	top: 100px;
+	left: 100px;
+	box-shadow: 10px 10px 10px grey;
+	
+ }
+
+.form-title {
+	position: absolute;
+	font-weight: 700;
+	top: 10px;
+	left: 215px;
+}
+
+.form-container div {
+	position: absolute;
+	display: flex;
+	margin: 5px 0px;
+}
+
+.recipient {
+	flex-direction: column;
+	top: 60px;
+}
+.recipient-num {
+	flex-direction: column;
+	top: 60px;
+	left: 280px;
+}
+.address {
+	flex-direction: column;
+	top: 180px;
+}
+.address input {
+	width: 490px;
+}
+.email-opt {
+	flex-direction: column;
+	top: 120px;
+}
+.recipient input, .recipient-num input, .email-opt input, .res-date input {
+	width: 225px;
+}
+.res-date {
+	flex-direction: column;
+	top: 120px;
+	left: 280px;
+}
+.comments {
+	display: flex;
+	flex-direction: column;
+	bottom: 90px;
+	width: 500px;
+}
+
+.recipient input, .recipient-num input, .address input, .email-opt input, .res-date input {
+	border-radius: 5px;
+	box-shadow: inset 1px 2px 3px black;
+	padding: 3px;
+}
+.btn {
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+	bottom: 25px;
+}
+.btn input {
+	width: 100px;
+	padding: 2px;
+	border-radius: 5px;
+}
+.sub {
+	margin-right: 300px;
+}
