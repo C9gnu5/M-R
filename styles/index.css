@@ -16,8 +16,8 @@ a {
 	justify-content: center;
 	align-items: center;
 	width: 500px;
-	height: 600px;
-	top: 40px;
+	height: 500px;
+	top: 90px;
 	bottom: 35px;
 	left: 900px;
 	border: none;
@@ -79,36 +79,14 @@ a {
 	color: white;
 }
 
-.faqs-link {
+.us-link {
 	top: 260px;
 	border: 1px solid black;
 	background-color: #E5E5E5;
 	transition: all 0.5s;
 }
-.faqs-link:hover {
-	top: 255px;
-	width: 440px;
-	height: 25px;
-	background-color: orange;	
-	border: 1px solid white;
-	border-radius: 5px;
-	box-shadow: 5px 5px 5px grey;
-	cursor: pointer;
-}
-.faqs-link:hover a {
-	font-size: 24px;
-	font-weight: 600px;
-	color: white;
-}
-
-.us-link {
-	top: 340px;
-	border: 1px solid black;
-	background-color: #E5E5E5;
-	transition: all 0.5s;
-}
 .us-link:hover {
-	top: 335px;
+	top: 255px;
 	width: 440px;
 	height: 25px;
 	background-color: orange;	
@@ -131,7 +109,7 @@ a {
 	padding: 2px;
 }
 .fb {
-	top: 460px;
+	top: 360px;
 	height: 10px;
 }
 .fb a:hover {
@@ -139,7 +117,7 @@ a {
 	color: orange;
 }
 .email {
-	top: 490px;
+	top: 390px;
 	left: 35px;
 	height: 10px;
 }
@@ -148,7 +126,7 @@ a {
 	color: orange;
 }
 .phone {
-	top: 520px;
+	top: 420px;
 	left: -8px;
 	height: 10px;
 }
@@ -186,4 +164,11 @@ a {
 	text-shadow: 2px 2px 2px orange;
 	top: 400px;
 	left: 205px;
+}
+
+@media screen and (width <= 1367px) {
+	.nav-box {
+		top: 45px;
+		left: 780px;
+	}
 }

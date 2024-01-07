@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>M&R Catering Services</title>
-	<link rel="icon" href="images/logo.jpg" type="images/logo">
+	<link rel="icon" href="images/logo.jpg" type="images/jpg">
 	<link rel="stylesheet" href="styles/form.css">
 </head>
 <body>
@@ -24,19 +24,19 @@
 					<input type="address" id="recipient-address" placeholder="Ex. Blk 1 Lot 11, Example St., Example Village" required>
 				</div>
 				<div class="email-opt">
-					<label for="email":>Email (Optional):&nbsp;</label>
+					<label for="email":>Email(Optional):&nbsp;</label>
 					<input type="email" id="recipient-email" placeholder="example@example.com">
 				</div>
 				<div class="res-date">
-					<label for="reserve-date">Date to Reserve:*&nbsp;</label>
-					<input type="date" id="reserve-date" required>
+					<label for="reserve-date">Date of Delivery(If not Today):*&nbsp;</label>
+					<input type="date" id="reserve-date">
 				</div>
 				<div class="comments">
-					<label for="comment">Comment:</label>
-					<textarea rows="10" cols="30" id="comment" placeholder="Enter here anything we should know or what you want to tell us about the reservation."></textarea>
+					<label for="comment">Additional Instructions(Optional):</label>
+					<textarea rows="10" cols="30" id="comment" placeholder="Enter here anything we should know or you want to tell us about the delivery."></textarea>
 				</div>
 				<div class="btn">
-					<input type="submit" value="Submit" class="sub">
+					<input type="submit" value="Submit" class="sub" onclick="alert('We'll get back to you as soon as possible')">
 					<input type="reset" value="Clear" class="clear">
 				</div>
 			</div>
