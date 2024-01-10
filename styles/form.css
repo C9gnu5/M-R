@@ -24,6 +24,8 @@ a {
 	margin: 0px 10px;
 	width: 20px;
 	height: 20px;
+	border: 1px solid black;
+	border-radius: 10px;
 }
 .fb img:hover {
 	width: 24px;
@@ -47,6 +49,9 @@ a {
 	top: 8px;
 }
 .phone img {
+	width: 23px;
+	height: 23px;
+	border: none;
 	margin-right: 4px;
 }
 .home {
@@ -78,87 +83,184 @@ a {
 	color: white;
 	box-shadow: 2px 2px 2px grey;
 }
-
-.form-container {
+/*nav-bar is only upto here*/
+h1 {
+	font-size: 200%;
+	text-align: center;
+	text-shadow: 2px 2px 2px orange;
+	margin-top: 4%;
+}
+h3 {
+	text-shadow: 1px 1px 1px orange;
+}
+.main-wrapper {
 	position: relative;
 	display: flex;
+	flex-direction: rows;
 	flex-wrap: wrap;
-	border: 2px solid orange;
-	border-radius: 20px;
-	background-color: lightgrey;
-	padding: 3% 1%;
-	width: 500px;
-	height: 450px;
-	top: 100px;
-	left: 100px;
-	box-shadow: 10px 10px 10px grey;
-	
- }
-
-.form-title {
-	position: absolute;
-	font-weight: 700;
-	top: 10px;
-	left: 215px;
+	align-items: center;
+	gap: 1em;
+	height: 550px;
+	margin: 1%;
 }
-
+.main-wrapper div {
+	height: 100%;
+	flex: 1 1 200px;
+}
+/*Updates board start*/
+.updt-board {
+	width: 483px;
+	background-color: #E6E6E6;
+	border: 3px solid orange;
+	border-radius: 5px;
+	text-align: center;
+}
+.hr {
+	border: 1px solid black;
+	width: 90%;
+}
+/*Updates board end*/
+/*Form start*/
+.form-container {
+	top: 0px;
+	position: absolute;
+	display: flex;
+	flex: 1 1 200px;
+	flex-direction: column;
+	width: 483px;
+	background-color: #E6E6E6;
+	border: 3px solid orange;
+	border-radius: 5px;
+}
 .form-container div {
 	position: absolute;
-	display: flex;
-	margin: 5px 0px;
-}
-
-.recipient {
 	flex-direction: column;
-	top: 60px;
+	height: 50px;
+}
+.form-title {
+	top: -1.5%;
+	left: 39%;
+	text-shadow: 1px 1px 1px orange;
+}
+.recipient {
+	top: 7%;
+	left: 2%;
 }
 .recipient-num {
-	flex-direction: column;
-	top: 60px;
-	left: 280px;
-}
-.address {
-	flex-direction: column;
-	top: 180px;
-}
-.address input {
-	width: 490px;
+	top: 17%;
+	left: 2%;
 }
 .email-opt {
-	flex-direction: column;
-	top: 120px;
+	top: 27%;
+	left: 2%;
 }
-.recipient input, .recipient-num input, .email-opt input, .res-date input {
-	width: 225px;
+.address {
+	top: 37%;
+	left: 2%;
 }
-.res-date {
-	flex-direction: column;
-	top: 120px;
-	left: 280px;
-}
-.comments {
-	display: flex;
-	flex-direction: column;
-	bottom: 90px;
-	width: 500px;
-}
-
-.recipient input, .recipient-num input, .address input, .email-opt input, .res-date input {
-	border-radius: 5px;
-	box-shadow: inset 1px 2px 3px black;
-	padding: 3px;
-}
-.btn {
-	position: absolute;
-	display: flex;
-	flex-direction: row;
-	bottom: 25px;
-}
-.btn input {
-	width: 100px;
+.address input {
+	display: block;
+	width: 269%;
 	padding: 2px;
 	border-radius: 5px;
 }
+.res-date {
+	top: 47%;
+	left: 2%;
+}
+.recipient input, .recipient-num input, .email-opt input, .res-date input, .ord-comm textarea {
+	display: block;
+	padding: 2px;
+	border-radius: 5px;
+}
+.recipient input:focus, .recipient-num input:focus, .email-opt input:focus, .res-date input:focus,
+.address input:focus, .ord-comm textarea:focus {
+	background-color: #E8F0FE;
+}
+.ord-comm {
+	top: 57%;
+	left: 2%;
+	width: 460px;
+}
 .sub {
-	margin-right: 300px;
+	top: 92%;
+	left: 2%;
+}
+.clear {
+	top: 92%;
+	right: 2%;
+}
+.sub input, .clear input {
+	width: 90px;
+	padding: 3px 7px;
+	border-radius: 7px;
+}
+.sub input:hover, .clear input:hover {
+	color: white;
+	background-color: orange;
+	border: 1px solid white;
+	box-shadow: 2px 2px 2px grey;
+	cursor: pointer;
+}
+/*Form End*/
+/*Calendar start*/
+.calendar {
+	width: 483px;
+	background-color: #E6E6E6;
+	border: 3px solid orange;
+	border-radius: 5px;
+	text-align: center;
+}
+.main {
+	position: absolute;
+	top: 15%;
+	text-align: center;
+	padding: 3px;
+}
+.main table {
+	width: 109px;
+	height: 130px;
+	font-size: 10.7px;
+	border: 1px solid orange;
+	background-color: white;
+	border-collapse: collapse;
+	margin: 3px;
+}
+.red {
+	background-color: orange;
+}
+td:hover {
+	background-color: lightgrey;
+	cursor: default;
+}
+th, td {
+	border: ;
+}
+/*Calendar end*/
+@media (max-width: 1367px) {
+	h1 {
+		font-size: 150%;
+	}
+	.main-wrapper {
+		height: 480px;
+	}
+	.form-container {
+		width: 32.9%;
+		margin-left: -0.5%;
+	}
+	.address input {
+		width: 239%;
+	}
+	.ord-comm textarea {
+		width: 88.5%;
+		height: 275%;
+	}
+	.main {
+		top: 90px;
+	}
+	.main table {
+		width: 90px;
+		height: 100px;
+		font-size: 9.1px;
+	}
 }

@@ -1,0 +1,105 @@
+html {
+	font-family: Nutmeg, sans serif;
+	width: 345px;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: lightpink;
+}
+body {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+body::before {
+	content: "";
+	position: absolute;
+	top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+	background-image: url('../images/shr.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: .60;
+	animation: change 10s infinite ease-in-out;
+}
+@keyframes change {
+	0%
+	{
+		background-image: url('../images/shr.jpg')
+	}
+	40%
+	{
+		background-image: url('../images/rc.jpg')
+	}
+	80%
+	{
+		background-image: url('../images/chop.jpg')
+	}
+}
+.fixed-title {
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top: 0;
+	left: 0;
+	width: 346px;
+	height: 50px;
+	backdrop-filter: blur(5px);
+	font-weight: 900;
+	font-size: 24px;
+	color: black;
+	text-shadow: 2px 2px 5px orange, -2px -2px 5px orange;
+	border-radius: 5px;
+	z-index: 100;
+	-webkit-text-stroke: 0.8px orange;
+}
+.menu-list {
+	position: absolute;
+	top: 14%;
+	left: -9%;
+	font-size: 21px;
+	color: black;
+	height: 86%;
+	text-shadow: 2px 2px 20px orange, -2px -2px 20px orange;
+	-webkit-text-stroke: 0.8px orange;
+	font-weight: bold;
+}
+.menu-list div {
+	position: relative;
+}
+li {
+	list-style: none inside;
+	line-height: 10%;
+}
+.rice span {
+	position: absolute;
+	top: -58%;
+	left: 11%;
+	font-size: 30px
+}
+.rice span.small {
+	top: 20%;
+	left: 239%;
+	font-size: 16px;
+	white-space: nowrap;
+}
+.veggies {
+	margin-top: 11%;
+}
+.veggies span {
+	position: absolute;
+	top: -60%;
+	left: 11%;
+	font-size: 30px
+}
+.veggies span.small {
+	top: 20%;
+	left: 158%;
+	font-size: 16px;
+	white-space: nowrap;
+}

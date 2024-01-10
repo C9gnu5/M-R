@@ -10,8 +10,8 @@
 	    <div class="home" onclick="location.href='index.html';">
 			<a href="index.html">Home</a>
 		</div>
-		<div class="menu" onclick="location.href=' ';">
-			<a href=" ">Menu</a>
+		<div class="menu" onclick="location.href='menu_frames.html';">
+			<a href="menu_frames.html">Menu</a>
 		</div>
 		<div class="us" onclick="location.href='about_us.html';">
 			<a href="about_us.html">About Us</a>
@@ -26,41 +26,790 @@
 			<img src="images/phone-logo.jpg"><span class="num">0949 401 3202</span>		
 		</div>
 	</nav>
-	<div class="wrapper">
-		<form>
-			<div class="form-container">
-				<div class="form-title">Delivery Form</div>
-				<div class="recipient">
-					<label for="recipient-name">Recipient's Name:*&nbsp;</label>
-					<input type="text" id="recipient-name" placeholder="Ex. John Cena" maxlength="20" required>
+	<h1>Book a Delivery</h1>
+	<div class="main-wrapper">
+		<div class="updt-board">
+			<h3>Updates Board</h3>
+			<hr class="hr">
+			<p>Delivery rate is fixed to &#8369;100 in any point of cavite.</p>
+			</br></br>
+			<p>No further updates!</p>
+		</div>
+		<div class="form-wrapper">
+			<form>
+				<div class="form-container">
+					<div class="form-title"><h3>Delivery Form</h3></div>
+					<div class="recipient">
+						<label for="recipient-name">Recipient's Name:*&nbsp;</label>
+						<input type="text" id="recipient-name" placeholder="Enter your name here" maxlength="20" required>
+					</div>
+					<div class="recipient-num">
+						<label for="recipient-number">Recipient's Number:*&nbsp;</label>
+						<input type="text" id="recipient-number" placeholder="09xxxxxxxxx" pattern="09+[0-9]{9}" maxlength="11" required
+						oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+					</div>
+					<div class="email-opt">
+						<label for="email_opt":>Email(Optional):&nbsp;</label>
+						<input type="email" id="email_opt" placeholder="Enter your email here">
+					</div>
+					<div class="address">
+						<label for="recipient-address">Recipient's Address:*&nbsp;</label>
+						<input type="address" id="recipient-address" placeholder="Enter your address here" required>
+					</div>
+					<div class="res-date">
+						<label for="reserve-date">Date & Time of Delivery(If not later today):*&nbsp;</label>
+						<input type="datetime-local" id="reserve-date">
+					</div>
+					<div class="ord-comm">
+						<label for="comment">Enter Order Below(& Additional Instructions if there's any):*</label>
+						<textarea rows="10" cols="60" id="comment" placeholder="Enter here your order and additional instructions if there's any." required></textarea>
+					</div>
+					<div  class="sub">
+						<input type="submit" value="Submit" value="confirm">
+					</div>
+					<div class="clear">
+						<input type="reset" value="Clear" >
+					</div>
 				</div>
-				<div class="recipient-num">
-					<label for="recipient-number">Recipient's Number:*&nbsp;</label>
-					<input type="text" id="recipient-number" placeholder="09xxxxxxxxx" pattern="09+[0-9]{9}" maxlength="11" required
-					oninput="this.value = this.value.replace(/[^0-9]/g, '')">
-				</div>
-				<div class="address">
-					<label for="recipient-address">Recipient's Address:*&nbsp;</label>
-					<input type="address" id="recipient-address" placeholder="Ex. Blk 1 Lot 11, Example St., Example Village" required>
-				</div>
-				<div class="email-opt">
-					<label for="email":>Email(Optional):&nbsp;</label>
-					<input type="email" id="recipient-email" placeholder="example@example.com">
-				</div>
-				<div class="res-date">
-					<label for="reserve-date">Date of Delivery(If not Today):*&nbsp;</label>
-					<input type="date" id="reserve-date">
-				</div>
-				<div class="comments">
-					<label for="comment">Additional Instructions(Optional):</label>
-					<textarea rows="10" cols="30" id="comment" placeholder="Enter here anything we should know or you want to tell us about the delivery."></textarea>
-				</div>
-				<div class="btn">
-					<input type="submit" value="Submit" class="sub" onclick="alert('We'll get back to you as soon as possible')">
-					<input type="reset" value="Clear" class="clear">
-				</div>
-			</div>
-		</form>
+			</form>
+		</div>
+		<div class="calendar">
+			<h3>2024 Calendar</h3>
+			<table class="main">
+				<tr> <!--Jan to Apr-->
+					<td>
+						<table cellspacing="0"> <!--January-->
+							<th colspan="7">January</th>
+							<tr>
+								<td>Su</td>
+								<td>Mo</td>
+								<td>Tu</td>
+								<td>We</td>
+								<td>Th</td>
+								<td>Fr</td>
+								<td>Sa</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td class="red" title="New Year">1</td>
+								<td>2</td>
+								<td>3</td>
+								<td>4</td>
+								<td>5</td>
+								<td>6</td>
+							</tr>
+							<tr>
+								<td>7</td>
+								<td>8</td>
+								<td>9</td>
+								<td>10</td>
+								<td>11</td>
+								<td>12</td>
+								<td>13</td>
+							</tr>
+							<tr>
+								<td>14</td>
+								<td>15</td>
+								<td>16</td>
+								<td>17</td>
+								<td>18</td>
+								<td>19</td>
+								<td>20</td>
+							</tr>
+							<tr>
+								<td>21</td>
+								<td>22</td>
+								<td>23</td>
+								<td>24</td>
+								<td>25</td>
+								<td>26</td>
+								<td>27</td>
+							</tr>
+							<tr>
+								<td>28</td>
+								<td>29</td>
+								<td>30</td>
+								<td>31</td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+						</table>
+					</td>
+					<td>
+						<table cellspacing="0"> <!--February-->
+							<th colspan="7">February</th>
+							<tr>
+								<td>Su</td>
+								<td>Mo</td>
+								<td>Tu</td>
+								<td>We</td>
+								<td>Th</td>
+								<td>Fr</td>
+								<td>Sa</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td>1</td>
+								<td>2</td>
+								<td>3</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>5</td>
+								<td>6</td>
+								<td>7</td>
+								<td>8</td>
+								<td>9</td>
+								<td class="red" title="Lunar New Year">10</td>
+							</tr>
+							<tr>
+								<td>11</td>
+								<td>12</td>
+								<td>13</td>
+								<td class="red" title="Valentine's Day">14</td>
+								<td>15</td>
+								<td>16</td>
+								<td>17</td>
+							</tr>
+							<tr>
+								<td>18</td>
+								<td>19</td>
+								<td>20</td>
+								<td>21</td>
+								<td>22</td>
+								<td>23</td>
+								<td>24</td>
+							</tr>
+							<tr>
+								<td>25</td>
+								<td>26</td>
+								<td>27</td>
+								<td>28</td>
+								<td>29</td>
+								<td></td>
+								<td></td>
+							</tr>
+						</table>
+					</td>
+					<td>
+						<table cellspacing="0"> <!--March-->
+							<th colspan="7">March</th>
+							<tr>
+								<td>Su</td>
+								<td>Mo</td>
+								<td>Tu</td>
+								<td>We</td>
+								<td>Th</td>
+								<td>Fr</td>
+								<td>Sa</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td>1</td>
+								<td>2</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>4</td>
+								<td>5</td>
+								<td>6</td>
+								<td>7</td>
+								<td>8</td>
+								<td>9</td>
+							</tr>
+							<tr>
+								<td>10</td>
+								<td>11</td>
+								<td>12</td>
+								<td>13</td>
+								<td>14</td>
+								<td>15</td>
+								<td>16</td>
+							</tr>
+							<tr>
+								<td>17</td>
+								<td>18</td>
+								<td>19</td>
+								<td>20</td>
+								<td>21</td>
+								<td>22</td>
+								<td>23</td>
+							</tr>
+							<tr>
+								<td>24</td>
+								<td>25</td>
+								<td>26</td>
+								<td>27</td>
+								<td class="red" title="Holy Thursday">28</td>
+								<td class="red" title="Good Friday">29</td>
+								<td>30</td>
+							</tr>
+							<tr>
+								<td>31</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+						</table>
+					</td>
+					<td>
+						<table cellspacing="0"> <!--April-->
+							<th colspan="7">April</th>
+							<tr>
+								<td>Su</td>
+								<td>Mo</td>
+								<td>Tu</td>
+								<td>We</td>
+								<td>Th</td>
+								<td>Fr</td>
+								<td>Sa</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>1</td>
+								<td>2</td>
+								<td>3</td>
+								<td>4</td>
+								<td>5</td>
+								<td>6</td>
+							</tr>
+							<tr>
+								<td>7</td>
+								<td>8</td>
+								<td class="red" title="Day of Valor">9</td>
+								<td class="red" title="Eid Al-Fitr">10</td>
+								<td>11</td>
+								<td>12</td>
+								<td>13</td>
+							</tr>
+							<tr>
+								<td>14</td>
+								<td>15</td>
+								<td>16</td>
+								<td>17</td>
+								<td>18</td>
+								<td>19</td>
+								<td>20</td>
+							</tr>
+							<tr>
+								<td>21</td>
+								<td>22</td>
+								<td>23</td>
+								<td>24</td>
+								<td>25</td>
+								<td>26</td>
+								<td>27</td>
+							</tr>
+							<tr>
+								<td>28</td>
+								<td>29</td>
+								<td>30</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr> <!--May to Aug-->
+					<td>
+						<table cellspacing="0"> <!--May-->
+							<th colspan="7">May</th>
+							<tr>
+								<td>Su</td>
+								<td>Mo</td>
+								<td>Tu</td>
+								<td>We</td>
+								<td>Th</td>
+								<td>Fr</td>
+								<td>Sa</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td class="red" title="Labour Day">1</td>
+								<td>2</td>
+								<td>3</td>
+								<td>4</td>
+							</tr>
+							<tr>
+								<td>5</td>
+								<td>6</td>
+								<td>7</td>
+								<td>8</td>
+								<td>9</td>
+								<td>10</td>
+								<td>11</td>
+							</tr>
+							<tr>
+								<td>12</td>
+								<td>13</td>
+								<td>14</td>
+								<td>15</td>
+								<td>16</td>
+								<td>17</td>
+								<td>18</td>
+							</tr>
+							<tr>
+								<td>19</td>
+								<td>20</td>
+								<td>21</td>
+								<td>22</td>
+								<td>23</td>
+								<td>24</td>
+								<td>25</td>
+							</tr>
+							<tr>
+								<td>26</td>
+								<td>27</td>
+								<td>28</td>
+								<td>29</td>
+								<td>30</td>
+								<td>31</td>
+								<td></td>
+							</tr>
+						</table>
+					</td>
+					<td>
+						<table cellspacing="0"> <!--June-->
+							<th colspan="7">June</th>
+							<tr>
+								<td>Su</td>
+								<td>Mo</td>
+								<td>Tu</td>
+								<td>We</td>
+								<td>Th</td>
+								<td>Fr</td>
+								<td>Sa</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td>1</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>3</td>
+								<td>4</td>
+								<td>5</td>
+								<td>6</td>
+								<td>7</td>
+								<td>8</td>
+							</tr>
+							<tr>
+								<td>9</td>
+								<td>10</td>
+								<td>11</td>
+								<td class="red" title="Philippines Independence Day">12</td>
+								<td>13</td>
+								<td>14</td>
+								<td>15</td>
+							</tr>
+							<tr>
+								<td class="red" title="Eid Al-Adha">16</td>
+								<td>17</td>
+								<td>18</td>
+								<td>19</td>
+								<td>20</td>
+								<td>21</td>
+								<td>22</td>
+							</tr>
+							<tr>
+								<td>23</td>
+								<td>24</td>
+								<td>25</td>
+								<td>26</td>
+								<td>27</td>
+								<td>28</td>
+								<td>29</td>
+							</tr>
+							<tr>
+								<td>30</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+						</table>
+					</td>
+					<td>
+						<table cellspacing="0"> <!--July-->
+							<th colspan="7">July</th>
+							<tr>
+								<td>Su</td>
+								<td>Mo</td>
+								<td>Tu</td>
+								<td>We</td>
+								<td>Th</td>
+								<td>Fr</td>
+								<td>Sa</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>1</td>
+								<td>2</td>
+								<td>3</td>
+								<td>4</td>
+								<td>5</td>
+								<td>6</td>
+							</tr>
+							<tr>
+								<td>7</td>
+								<td>8</td>
+								<td>9</td>
+								<td>10</td>
+								<td>11</td>
+								<td>12</td>
+								<td>13</td>
+							</tr>
+							<tr>
+								<td>14</td>
+								<td>15</td>
+								<td>16</td>
+								<td>17</td>
+								<td>18</td>
+								<td>19</td>
+								<td>20</td>
+							</tr>
+							<tr>
+								<td>21</td>
+								<td>22</td>
+								<td>23</td>
+								<td>24</td>
+								<td>25</td>
+								<td>26</td>
+								<td>27</td>
+							</tr>
+							<tr>
+								<td>28</td>
+								<td>29</td>
+								<td>30</td>
+								<td>31</td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+						</table>
+					</td>
+					<td>
+						<table cellspacing="0"> <!--August-->
+							<th colspan="7">August</th>
+							<tr>
+								<td>Su</td>
+								<td>Mo</td>
+								<td>Tu</td>
+								<td>We</td>
+								<td>Th</td>
+								<td>Fr</td>
+								<td>Sa</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td>1</td>
+								<td>2</td>
+								<td>3</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>5</td>
+								<td>6</td>
+								<td>7</td>
+								<td>8</td>
+								<td>9</td>
+								<td>10</td>
+							</tr>
+							<tr>
+								<td>11</td>
+								<td>12</td>
+								<td>13</td>
+								<td>14</td>
+								<td>15</td>
+								<td>16</td>
+								<td>17</td>
+							</tr>
+							<tr>
+								<td>18</td>
+								<td>19</td>
+								<td>20</td>
+								<td class="red" title="Ninoy Aquino Day">21</td>
+								<td>22</td>
+								<td>23</td>
+								<td>24</td>
+							</tr>
+							<tr>
+								<td>25</td>
+								<td class="red" title="Philippines National Heroes' Day">26</td>
+								<td>27</td>
+								<td>28</td>
+								<td>29</td>
+								<td>30</td>
+								<td>31</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr> <!--Sep to Dec-->
+					<td>
+						<table cellspacing="0"> <!--September-->
+							<th colspan="7">September</th>
+							<tr>
+								<td>Su</td>
+								<td>Mo</td>
+								<td>Tu</td>
+								<td>We</td>
+								<td>Th</td>
+								<td>Fr</td>
+								<td>Sa</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>2</td>
+								<td>3</td>
+								<td>4</td>
+								<td>5</td>
+								<td>6</td>
+								<td>7</td>
+							</tr>
+							<tr>
+								<td>8</td>
+								<td>9</td>
+								<td>10</td>
+								<td>11</td>
+								<td>12</td>
+								<td>13</td>
+								<td>14</td>
+							</tr>
+							<tr>
+								<td>15</td>
+								<td>16</td>
+								<td>17</td>
+								<td>18</td>
+								<td>19</td>
+								<td>20</td>
+								<td>21</td>
+							</tr>
+							<tr>
+								<td>22</td>
+								<td>23</td>
+								<td>24</td>
+								<td>25</td>
+								<td>26</td>
+								<td>27</td>
+								<td>28</td>
+							</tr>
+							<tr>
+								<td>29</td>
+								<td>30</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+						</table>
+					</td>
+					<td>
+						<table cellspacing="0"> <!--October-->
+							<th colspan="7">October</th>
+							<tr>
+								<td>Su</td>
+								<td>Mo</td>
+								<td>Tu</td>
+								<td>We</td>
+								<td>Th</td>
+								<td>Fr</td>
+								<td>Sa</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td>1</td>
+								<td>2</td>
+								<td>3</td>
+								<td>4</td>
+								<td>5</td>
+							</tr>
+							<tr>
+								<td>6</td>
+								<td>7</td>
+								<td>8</td>
+								<td>9</td>
+								<td>10</td>
+								<td>11</td>
+								<td>12</td>
+							</tr>
+							<tr>
+								<td>13</td>
+								<td>14</td>
+								<td>15</td>
+								<td>16</td>
+								<td>17</td>
+								<td>18</td>
+								<td>19</td>
+							</tr>
+							<tr>
+								<td>20</td>
+								<td>21</td>
+								<td>22</td>
+								<td>23</td>
+								<td>24</td>
+								<td>25</td>
+								<td>26</td>
+							</tr>
+							<tr>
+								<td>27</td>
+								<td>28</td>
+								<td>29</td>
+								<td>30</td>
+								<td>31</td>
+								<td></td>
+								<td></td>
+							</tr>
+						</table>
+					</td>
+					<td>
+						<table cellspacing="0"> <!--November-->
+							<th colspan="7">November</th>
+							<tr>
+								<td>Su</td>
+								<td>Mo</td>
+								<td>Tu</td>
+								<td>We</td>
+								<td>Th</td>
+								<td>Fr</td>
+								<td>Sa</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td class="red" title="All Saints' Day">1</td>
+								<td>2</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>4</td>
+								<td>5</td>
+								<td>6</td>
+								<td>7</td>
+								<td>8</td>
+								<td>9</td>
+							</tr>
+							<tr>
+								<td>10</td>
+								<td>11</td>
+								<td>12</td>
+								<td>13</td>
+								<td>14</td>
+								<td>15</td>
+								<td>16</td>
+							</tr>
+							<tr>
+								<td>17</td>
+								<td>18</td>
+								<td>19</td>
+								<td>20</td>
+								<td>21</td>
+								<td>22</td>
+								<td>23</td>
+							</tr>
+							<tr>
+								<td>24</td>
+								<td>25</td>
+								<td>26</td>
+								<td>27</td>
+								<td>28</td>
+								<td>29</td>
+								<td class="red" title="Bonifacio Day">30</td>
+							</tr>
+						</table>
+					</td>
+					<td>
+						<table cellspacing="0"> <!--December-->
+							<th colspan="7">December</th>
+							<tr>
+								<td>Su</td>
+								<td>Mo</td>
+								<td>Tu</td>
+								<td>We</td>
+								<td>Th</td>
+								<td>Fr</td>
+								<td>Sa</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>2</td>
+								<td>3</td>
+								<td>4</td>
+								<td>5</td>
+								<td>6</td>
+								<td>7</td>
+							</tr>
+							<tr>
+								<td class="red" title="Feast of the Immaculate Conception">8</td>
+								<td>9</td>
+								<td>10</td>
+								<td>11</td>
+								<td>12</td>
+								<td>13</td>
+								<td>14</td>
+							</tr>
+							<tr>
+								<td>15</td>
+								<td>16</td>
+								<td>17</td>
+								<td>18</td>
+								<td>19</td>
+								<td>20</td>
+								<td>21</td>
+							</tr>
+							<tr>
+								<td>22</td>
+								<td>23</td>
+								<td>24</td>
+								<td class="red" title="Christmas Day">25</td>
+								<td>26</td>
+								<td>27</td>
+								<td>28</td>
+							</tr>
+							<tr>
+								<td>29</td>
+								<td class="red" title="Rizal Day">30</td>
+								<td>31</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</div>
 	</div>
 </body>
 </html>

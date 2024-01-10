@@ -166,7 +166,7 @@ a {
 	left: 205px;
 }
 
-@media screen and (width <= 1367px) {
+@media (max-width: 1367px) {
 	.nav-box {
 		top: 45px;
 		left: 780px;
